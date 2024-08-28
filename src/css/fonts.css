@@ -1,0 +1,60 @@
+.information h1 {
+    font-family: 'Mjolnir';
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+    animation: animate 1.5s linear;
+}
+
+.information .description {
+    width: 60%;
+    font-family: 'Viking';
+    font-size: 14px;
+    color: #d7d7d7;
+    line-height: 20px;
+    text-shadow: 2px 3px 4px black;
+    text-align: justify;
+    animation: animate 1.5s linear;
+}
+
+@keyframes animate {
+    0% {
+        filter: blur(0);
+    }
+
+    50% {
+        filter: blur(10px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
+}
+
+
+@font-face {
+    font-family: "Mjolnir";
+    src: url(../font/Mjölnir/Mjolnir.ttf);
+    font-family: "Viking";
+    src: url(../font/helmantica/Helmantica.otf);
+
+}
+
+
+.information {
+    display: none;
+}
+
+.information.active {
+    display: block;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+}
